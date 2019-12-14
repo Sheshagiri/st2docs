@@ -69,7 +69,7 @@ Create a system user for executing SSH actions:
 
 .. code-block:: bash
 
-    useradd -d /home/stanley stanley
+    useradd -m -d /home/stanley stanley
     su stanley
     ssh-keygen -f /home/stanley/.ssh/stanley_rsa -t rsa -b 4096 -C "stanley@stackstorm.com" -N ''
     exit
